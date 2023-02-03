@@ -22,6 +22,7 @@ final class ProductosWireframe: ProductosWireframeProtocol {
     func showProductosModule(presenter: ProductosPresenter) {
         let vc = ProductosViewController()
         vc.presenter = presenter
+        vc.modalPresentationStyle = .fullScreen
         uvc?.present(vc, animated: true)
     }
 }

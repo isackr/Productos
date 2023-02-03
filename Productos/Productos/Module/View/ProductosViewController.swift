@@ -16,18 +16,21 @@ final class ProductosViewController: UIViewController {
     @IBOutlet private weak var searchBar: UISearchBar! {
         didSet {
             searchBar.accessibilityIdentifier = "SEARCH_BAR"
+            searchBar.layer.cornerRadius = 10
         }
     }
     
     @IBOutlet private weak var tableViewProduct: UITableView! {
         didSet {
             tableViewProduct.accessibilityIdentifier = "TABLEVIEW"
+            tableViewProduct.layer.cornerRadius = 10
         }
     }
     
     @IBOutlet private weak var btnSearch: UIButton! {
         didSet {
             btnSearch.accessibilityIdentifier = "BUTTON_SEARCH"
+            btnSearch.layer.cornerRadius = 10
         }
     }
     

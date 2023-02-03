@@ -22,11 +22,12 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Ingresa tu busqueda" translatesAutoresizingMaskIntoConstraints="NO" id="v2t-FM-wiM">
+                <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Ingresa tu busqueda" translatesAutoresizingMaskIntoConstraints="NO" id="v2t-FM-wiM">
                     <rect key="frame" x="16" y="69" width="361" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="Aas-Ou-hNU"/>
                     </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yym-co-1EZ">
@@ -38,45 +39,48 @@
                         <outlet property="prefetchDataSource" destination="-1" id="srh-1D-dup"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60Z-5o-Ksv">
-                    <rect key="frame" x="16" y="136" width="361" height="34.333333333333343"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60Z-5o-Ksv">
+                    <rect key="frame" x="36" y="136" width="321" height="48"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="34.329999999999998" id="wi5-pQ-gkT"/>
+                        <constraint firstAttribute="height" constant="48" id="wi5-pQ-gkT"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Buscar Producto"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Buscar Producto" cornerStyle="medium">
+                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                    </buttonConfiguration>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="xor-oE-QG8"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
             <constraints>
-                <constraint firstItem="60Z-5o-Ksv" firstAttribute="leading" secondItem="xor-oE-QG8" secondAttribute="leading" constant="16" id="0qD-O7-DdO"/>
                 <constraint firstItem="v2t-FM-wiM" firstAttribute="top" secondItem="xor-oE-QG8" secondAttribute="top" constant="10" id="1kp-yB-YkP"/>
                 <constraint firstItem="60Z-5o-Ksv" firstAttribute="top" secondItem="v2t-FM-wiM" secondAttribute="bottom" constant="11" id="5L7-E3-YRW"/>
                 <constraint firstItem="yym-co-1EZ" firstAttribute="bottom" secondItem="xor-oE-QG8" secondAttribute="bottom" id="5Vk-AP-79N"/>
                 <constraint firstItem="xor-oE-QG8" firstAttribute="trailing" secondItem="v2t-FM-wiM" secondAttribute="trailing" constant="16" id="Cj4-tz-tAo"/>
                 <constraint firstItem="xor-oE-QG8" firstAttribute="trailing" secondItem="yym-co-1EZ" secondAttribute="trailing" constant="16" id="Mmx-fj-TwD"/>
-                <constraint firstItem="xor-oE-QG8" firstAttribute="trailing" secondItem="60Z-5o-Ksv" secondAttribute="trailing" constant="16" id="NsZ-s6-WJC"/>
-                <constraint firstItem="yym-co-1EZ" firstAttribute="top" secondItem="60Z-5o-Ksv" secondAttribute="bottom" constant="34" id="QhV-gz-WLi"/>
+                <constraint firstItem="yym-co-1EZ" firstAttribute="top" secondItem="60Z-5o-Ksv" secondAttribute="bottom" constant="20.333333333333314" id="QhV-gz-WLi"/>
                 <constraint firstItem="yym-co-1EZ" firstAttribute="bottom" secondItem="xor-oE-QG8" secondAttribute="bottom" id="ScN-j8-cEx"/>
-                <constraint firstItem="60Z-5o-Ksv" firstAttribute="leading" secondItem="xor-oE-QG8" secondAttribute="leading" constant="16" id="U6d-Ba-HdY"/>
                 <constraint firstItem="v2t-FM-wiM" firstAttribute="leading" secondItem="xor-oE-QG8" secondAttribute="leading" constant="16" id="XNY-JN-y7x"/>
                 <constraint firstItem="60Z-5o-Ksv" firstAttribute="top" secondItem="v2t-FM-wiM" secondAttribute="bottom" constant="11" id="XYk-E2-nNP"/>
                 <constraint firstItem="yym-co-1EZ" firstAttribute="leading" secondItem="xor-oE-QG8" secondAttribute="leading" constant="16" id="bQ2-wC-x6N"/>
-                <constraint firstItem="yym-co-1EZ" firstAttribute="top" secondItem="60Z-5o-Ksv" secondAttribute="bottom" constant="34" id="iOm-8p-gQk"/>
-                <constraint firstItem="xor-oE-QG8" firstAttribute="trailing" secondItem="60Z-5o-Ksv" secondAttribute="trailing" constant="16" id="jA5-12-d6f"/>
+                <constraint firstItem="yym-co-1EZ" firstAttribute="top" secondItem="60Z-5o-Ksv" secondAttribute="bottom" constant="20.333333333333314" id="iOm-8p-gQk"/>
                 <constraint firstItem="v2t-FM-wiM" firstAttribute="leading" secondItem="xor-oE-QG8" secondAttribute="leading" constant="16" id="jTX-9E-MRx"/>
                 <constraint firstItem="xor-oE-QG8" firstAttribute="trailing" secondItem="v2t-FM-wiM" secondAttribute="trailing" constant="16" id="jbS-TR-V3b"/>
                 <constraint firstItem="xor-oE-QG8" firstAttribute="trailing" secondItem="yym-co-1EZ" secondAttribute="trailing" constant="16" id="kwC-aY-S4z"/>
-                <constraint firstItem="yym-co-1EZ" firstAttribute="leading" secondItem="60Z-5o-Ksv" secondAttribute="trailing" constant="-361" id="rrR-69-hC3"/>
+                <constraint firstItem="60Z-5o-Ksv" firstAttribute="leading" secondItem="xor-oE-QG8" secondAttribute="leading" constant="36" id="lCF-eX-bs4"/>
+                <constraint firstItem="xor-oE-QG8" firstAttribute="trailing" secondItem="60Z-5o-Ksv" secondAttribute="trailing" constant="36" id="ooQ-HC-l52"/>
                 <constraint firstItem="yym-co-1EZ" firstAttribute="leading" secondItem="xor-oE-QG8" secondAttribute="leading" constant="16" id="z5s-0b-U8U"/>
             </constraints>
-            <point key="canvasLocation" x="-291" y="23"/>
+            <point key="canvasLocation" x="-292.36641221374043" y="22.535211267605636"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
