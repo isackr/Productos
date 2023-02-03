@@ -131,6 +131,12 @@ extension ProductosViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "LISTA DE PRODUCTOS"
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+           if indexPath.row == arrayProductos.count - 1 {
+                //Perform action
+        }
+    }
 }
 
 public extension MutableCollection {

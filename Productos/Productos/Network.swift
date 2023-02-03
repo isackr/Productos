@@ -15,7 +15,8 @@ final class Network {
                   parameter2: Int = 1) -> Single<ProductosModel?> {
         
         return Single<ProductosModel?>.create { single in
-            let urlString: String = "https://00672285.us-south.apigw.appdomain.cloud/demo-gapsi/search?&query=\(parameter1)&page=\(parameter2)"
+            var urlString: String = "https://00672285.us-south.apigw.appdomain.cloud/demo-gapsi/search?&query=\(parameter1)&page=\(parameter2)"
+            urlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
             guard let url = URL(string: urlString) else {
                 return single(.success(nil)) as! Disposable
             }
@@ -48,12 +49,7 @@ final class Network {
 }
 
 enum CustomError: Error {
-    // Throw when an invalid password is entered
     case invalidURL
-
-    // Throw when an expected resource is not found
     case invalidData
-
-    // Throw in all other cases
     case unexpected(code: Int)
 }
