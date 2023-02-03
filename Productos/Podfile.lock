@@ -1,4 +1,5 @@
 PODS:
+  - MBProgressHUD (1.2.0)
   - RxBlocking (6.5.0):
     - RxSwift (= 6.5.0)
   - RxCocoa (6.5.0):
@@ -9,28 +10,35 @@ PODS:
   - RxSwift (6.5.0)
   - RxTest (6.5.0):
     - RxSwift (= 6.5.0)
+  - SCLAlertView (0.8)
 
 DEPENDENCIES:
+  - MBProgressHUD
   - RxBlocking (= 6.5.0)
   - RxCocoa
   - RxSwift
   - RxTest (= 6.5.0)
+  - SCLAlertView
 
 SPEC REPOS:
   trunk:
+    - MBProgressHUD
     - RxBlocking
     - RxCocoa
     - RxRelay
     - RxSwift
     - RxTest
+    - SCLAlertView
 
 SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
 
-PODFILE CHECKSUM: 57ca8391384a09730cf411ae5ddabaf1cd0404cd
+PODFILE CHECKSUM: 233d91ff8372ece63cab2a67c51361b920d57444
 
 COCOAPODS: 1.11.3

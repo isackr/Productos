@@ -7,6 +7,8 @@ target 'Productos' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SCLAlertView'
+  pod 'MBProgressHUD'
 
   target 'ProductosTests' do
     inherit! :search_paths

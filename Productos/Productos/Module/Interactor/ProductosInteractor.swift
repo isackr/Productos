@@ -15,15 +15,17 @@ protocol ProductosInteractorProtocol: AnyObject {
 }
 
 final class ProductosInteractor: ProductosInteractorProtocol {
-    var dataManager: ProductosDataManagerProtocol = ProductosDataManager()
+    var dataManager: ProductosDataManagerProtocol?
     
-    init(){}
+    init(dataManager: ProductosDataManager) {
+        self.dataManager = dataManager
+    }
     
     func searchProduct(text: String) -> Single<ProductosModel?> {
-        return dataManager.searchProduct(text: text)
+        return dataManager?.searchProduct(text: text) ?? .never()
     }
     
     func reloadSearchProduct(text: String, page: Int) -> Single<ProductosModel?> {
-        return dataManager.reloadSearchProduct(text: text, page: page)
+        return dataManager?.reloadSearchProduct(text: text, page: page) ?? .never()
     }
 }
